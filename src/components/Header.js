@@ -3,10 +3,9 @@ import {NavLink} from "react-router-dom";
 
 const Header = () => {
     return (
-        <div className="flex items-center justify-between h-[15vh] w-full bg-[#F5F5F5]">
-            <div className="flex space-x-3 ml-16">
-                <h1>Logo</h1>
-                <h1>Nom de l'Ei</h1>
+        <div className="flex items-center justify-between h-[15vh] w-full bg-[#F5F5F5] fixed">
+            <div className="flex space-x-3 ml-32 h-[100%]">
+                <img src={require("../assets/logo-PhotoRoom.png-PhotoRoom(1).png")}/>
             </div>
             <div>
                 <ul className="flex space-x-10 text-[#919191] mr-5">
@@ -14,7 +13,7 @@ const Header = () => {
                         <li>Accueil</li>
                     </NavLink>
                     <NavLink to={"/about"} className={activePage("about")}>
-                        <li>A propos</li>
+                        <li>À propos</li>
                     </NavLink>
                     <NavLink to={"/work"} className={activePage("work")}>
                         <li>Préstations</li>
@@ -38,7 +37,7 @@ const checkActive = (match) => {
 };
 const activePage = (match) => {
     if (checkActive(match))
-        return "text-[#919191]";
-    return "text-[#919191] hover:text-gray-300";
+        return "text-[#BD9571]";
+    return "text-[#919191] duration-300 hover:text-[#CEA27B]";
 }
 export default Header;
