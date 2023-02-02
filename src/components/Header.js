@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className="flex items-center justify-between h-[15vh] w-full bg-[#F5F5F5] fixed">
             <div className="flex space-x-3 ml-32 h-[100%]">
-                <img src={require("../assets/logo-PhotoRoom.png-PhotoRoom(1).png")}/>
+                <img src={require("../assets/logo.png")}/>
             </div>
             <div>
                 <ul className="flex space-x-10 text-[#919191] mr-5">
